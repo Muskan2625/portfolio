@@ -1,35 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Source+Code+Pro:wght@300&display=swap");
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: sans-serif; }
 
 body .main {
-  background-color: #2291a5;
+  background-color: #11cdef;
   color: white;
   height: 598px;
   background-size: auto; }
   body .main .header {
-    background-color: black;
-    height: 75px;
+    background-color: #172b4d;
     width: 97%;
     padding: 20px;
     font-size: 22px;
-    font-family: 'Cabin Sketch', cursive;
-    padding-bottom: 0px;
-    position: sticky;
+    position: fixed;
     top: 0px;
-    opacity: 1;
-    margin: 0px; }
+    margin: 0px;
+    z-index: 9999; }
   body .main .content {
     display: flex;
     flex-direction: row;
-    padding-top: 188px;
-    position: relative;
-    font-family: 'Source Code Pro', monospace;
-    width: 100%; }
+    margin-top: 90px;
+    width: 100%;
+    padding-block: 25px;
+    margin-bottom: 20px; }
     body .main .content .myintro {
       padding-left: 84px;
-      width: 46vw; }
+      width: 46vw;
+      display: flex;
+      flex-direction: column;
+      gap: 10px; }
       body .main .content .myintro .hello {
         font-size: 31px;
         padding-bottom: 5px; }
@@ -44,21 +45,26 @@ body .main {
         font-size: 19px;
         padding-bottom: 5px;
         font-family: sans-serif; }
-      body .main .content .myintro .buttons {
-        text-decoration: none !important; }
-        body .main .content .myintro .buttons button {
-          padding: 12px;
-          border-radius: 10px;
-          background-color: #10232a;
-          font-weight: bold;
-          font-size: 17px;
-          margin: 38px 5px;
-          cursor: pointer;
-          color: white; }
+      body .main .content .myintro .btn {
+        text-decoration: none;
+        text-align: center;
+        border: 1px solid white;
+        color: #172b4d;
+        background-color: white;
+        padding: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 5px;
+        display: inline-flex;
+        align-items: center; }
+        body .main .content .myintro .btn:hover {
+          background-color: whitesmoke; }
   body .main .skillset {
-    color: black;
+    display: flex;
+    color: #172b4d;
     flex-direction: column;
-    height: 435px; }
+    background-color: white;
+    padding-block: 25px; }
     body .main .skillset .header1 {
       align-items: center;
       display: flex;
@@ -66,15 +72,65 @@ body .main {
       padding-left: 89px; }
       body .main .skillset .header1 h2 {
         font-family: sans-serif; }
+    body .main .skillset .progress {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      margin-left: 10%;
+      gap: 30px; }
+      body .main .skillset .progress > div {
+        display: inline-flex;
+        font-size: 20px;
+        font-weight: 700;
+        font-style: italic; }
+        body .main .skillset .progress > div label {
+          width: 250px; }
+        body .main .skillset .progress > div progress {
+          height: 25px;
+          width: 500px; }
   body .main .edu {
-    background-color: #2291a5;
-    height: 541px;
+    background-color: #11cdef;
     margin-top: 27px;
-    color: white; }
+    color: white;
+    position: relative; }
     body .main .edu h1 {
       padding-top: 27px;
       padding-left: 230px;
       font-size: 47px; }
-    body .main .edu .boxes {
+    body .main .edu .edu_container {
+      padding: 100px;
       display: flex;
-      flex-direction: row; }
+      flex-wrap: wrap;
+      gap: 50px;
+      justify-content: space-around; }
+      body .main .edu .edu_container .edu_card {
+        color: #172b4d;
+        width: 500px;
+        height: 200px;
+        background-color: white;
+        border-radius: 5px;
+        transform: translateY(-20px);
+        transition: all 0.15s ease;
+        margin-top: 50px;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px; }
+        body .main .edu .edu_container .edu_card:hover {
+          margin-top: 0px; }
+        body .main .edu .edu_container .edu_card .school {
+          color: #11cdef;
+          font-size: 24px; }
+        body .main .edu .edu_container .edu_card .course {
+          color: #172b4d;
+          font-size: 20px; }
+        body .main .edu .edu_container .edu_card .time {
+          color: white;
+          background-color: #11cdef;
+          border-radius: 3px;
+          padding: 5px;
+          width: 40%; }
+        body .main .edu .edu_container .edu_card .info {
+          color: black;
+          font-size: 16px; }

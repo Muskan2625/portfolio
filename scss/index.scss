@@ -1,129 +1,169 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Source+Code+Pro:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Source+Code+Pro:wght@300&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
 body {
-    .main {
-
-        background-color: rgb(34, 145, 165);
-        color: white;
-        height: 598px;
-        background-size: auto;
-
-        .header {
-
-            background-color: rgb(0, 0, 0);
-            height: 75px;
-            width: 97%;
-            padding: 20px;
-            font-size: 22px;
-            font-family: 'Cabin Sketch', cursive;
-            padding-bottom: 0px;
-            position: sticky;
-            top: 0px;
-            opacity: 1;
-            margin: 0px;
-        }
-
-
-
-
-        .content {
-            display: flex;
-            flex-direction: row;
-            padding-top: 188px;
-            position: relative;
-            font-family: 'Source Code Pro', monospace;
-            width: 100%;
-
-
-            .myintro {
-                padding-left: 84px;
-                width: 46vw;
-
-                .hello {
-                    font-size: 31px;
-                    padding-bottom: 5px;
-
-                }
-
-                .name {
-                    font-size: 36px;
-                    padding-bottom: 5px;
-                    font-family: sans-serif;
-
-                }
-
-                .about {
-                    font-size: 25px;
-                    padding-bottom: 5px;
-
-                }
-
-                .moreabout {
-                    font-size: 19px;
-                    padding-bottom: 5px;
-                    font-family: sans-serif;
-                }
-
-                .buttons {
-                    text-decoration: none !important;
-
-                    button {
-                        padding: 12px;
-                        border-radius: 10px;
-                        background-color: #10232a;
-                        font-weight: bold;
-                        font-size: 17px;
-                        margin: 38px 5px;
-                        cursor: pointer;
-                        color: white;
-                    }
-                }
-
-            }
-
-        }
-
-        .skillset {
-            // display: flex;
-            color: black;
-            flex-direction: column;
-            height: 435px;
-
-
-            .header1 {
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                padding-left: 89px;
-
-                h2 {
-                    font-family: sans-serif;
-                }
-            }
-
-            
-        }
-
-        .edu{
-            background-color: rgb(34, 145, 165); ;
-            height: 541px;
-            margin-top: 27px;
-            color: white;
-            h1{
-                padding-top: 27px;
-                    padding-left: 230px;
-                    font-size: 47px;
-                }
-            .boxes{
-                display: flex;
-                flex-direction: row;
-            }  
-        }
+  .main {
+    background-color: #11cdef;
+    color: white;
+    height: 598px;
+    background-size: auto;
+    .header {
+      background-color: #172b4d;
+      width: 97%;
+      padding: 20px;
+      font-size: 22px;
+      position: fixed;
+      top: 0px;
+      margin: 0px;
+      z-index: 9999;
     }
+    .content {
+      display: flex;
+      flex-direction: row;
+      margin-top: 90px;
+      width: 100%;
+      padding-block: 25px;
+      margin-bottom: 20px;
+      .myintro {
+        padding-left: 84px;
+        width: 46vw;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .hello {
+          font-size: 31px;
+          padding-bottom: 5px;
+        }
+        .name {
+          font-size: 36px;
+          padding-bottom: 5px;
+          font-family: sans-serif;
+        }
+        .about {
+          font-size: 25px;
+          padding-bottom: 5px;
+        }
+        .moreabout {
+          font-size: 19px;
+          padding-bottom: 5px;
+          font-family: sans-serif;
+        }
+        .btn {
+          text-decoration: none;
+          text-align: center;
+          border: 1px solid white;
+          color: #172b4d;
+          background-color: white;
+          padding: 8px;
+          font-size: 16px;
+          font-weight: bold;
+          border-radius: 5px;
+          display: inline-flex;
+          align-items: center;
+          &:hover {
+            background-color: whitesmoke;
+          }
+        }
+      }
+    }
+
+    .skillset {
+      display: flex;
+      color: #172b4d;
+      flex-direction: column;
+      background-color: white;
+      padding-block: 25px;
+      .header1 {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding-left: 89px;
+
+        h2 {
+          font-family: sans-serif;
+        }
+      }
+      .progress {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin-left: 10%;
+        gap: 30px;
+        & > div {
+          display: inline-flex;
+          font-size: 20px;
+          font-weight: 700;
+          font-style: italic;
+          label {
+            width: 250px;
+          }
+          progress {
+            height: 25px;
+            width: 500px;
+          }
+        }
+      }
+    }
+
+    .edu {
+      background-color: #11cdef;
+      margin-top: 27px;
+      color: white;
+      position: relative;
+      h1 {
+        padding-top: 27px;
+        padding-left: 230px;
+        font-size: 47px;
+      }
+      .edu_container {
+        padding: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: space-around;
+        .edu_card {
+          color: #172b4d;
+          width: 500px;
+          height: 200px;
+          background-color: white;
+          border-radius: 5px;
+          transform: translateY(-20px);
+          transition: all 0.15s ease;
+          margin-top: 50px;
+          padding: 24px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          &:hover {
+            margin-top: 0px;
+          }
+          .school {
+            color: #11cdef;
+            font-size: 24px;
+          }
+          .course {
+            color: #172b4d;
+            font-size: 20px;
+          }
+          .time {
+            color: white;
+            background-color: #11cdef;
+            border-radius: 3px;
+            padding: 5px;
+            width: 40%;
+          }
+          .info {
+            color: black;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
 }
