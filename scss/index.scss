@@ -23,11 +23,11 @@ body {
       z-index: 9999;
     }
     .content {
-      display: flex;
+      display: inline-flex;
       flex-direction: row;
       margin-top: 90px;
-      width: 100%;
-      padding-block: 25px;
+      //width: 100%;
+      //padding-block: 25px;
       margin-bottom: 20px;
       .myintro {
         padding-left: 84px;
@@ -69,6 +69,11 @@ body {
             background-color: whitesmoke;
           }
         }
+      }
+      .pic{
+        //margin-top: -26px;
+    position: relative;
+    margin-left: 179px;
       }
     }
 

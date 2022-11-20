@@ -19,11 +19,9 @@ body .main {
     margin: 0px;
     z-index: 9999; }
   body .main .content {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     margin-top: 90px;
-    width: 100%;
-    padding-block: 25px;
     margin-bottom: 20px; }
     body .main .content .myintro {
       padding-left: 84px;
@@ -59,6 +57,9 @@ body .main {
         align-items: center; }
         body .main .content .myintro .btn:hover {
           background-color: whitesmoke; }
+    body .main .content .pic {
+      position: relative;
+      margin-left: 179px; }
   body .main .skillset {
     display: flex;
     color: #172b4d;
