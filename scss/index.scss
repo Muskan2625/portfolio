@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Source+Code+Pro:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    .main {
+
+        background-color: rgb(34, 145, 165);
+        color: white;
+        height: 598px;
+        background-size: auto;
+
+        .header {
+
+            background-color: rgb(0, 0, 0);
+            height: 75px;
+            width: 97%;
+            padding: 20px;
+            font-size: 22px;
+            font-family: 'Cabin Sketch', cursive;
+            padding-bottom: 0px;
+            position: sticky;
+            top: 0px;
+            opacity: 1;
+            margin: 0px;
+        }
+
+
+
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            padding-top: 188px;
+            position: relative;
+            font-family: 'Source Code Pro', monospace;
+            width: 100%;
+
+
+            .myintro {
+                padding-left: 84px;
+                width: 46vw;
+
+                .hello {
+                    font-size: 31px;
+                    padding-bottom: 5px;
+
+                }
+
+                .name {
+                    font-size: 36px;
+                    padding-bottom: 5px;
+                    font-family: sans-serif;
+
+                }
+
+                .about {
+                    font-size: 25px;
+                    padding-bottom: 5px;
+
+                }
+
+                .moreabout {
+                    font-size: 19px;
+                    padding-bottom: 5px;
+                    font-family: sans-serif;
+                }
+
+                .buttons {
+                    text-decoration: none !important;
+
+                    button {
+                        padding: 12px;
+                        border-radius: 10px;
+                        background-color: #10232a;
+                        font-weight: bold;
+                        font-size: 17px;
+                        margin: 38px 5px;
+                        cursor: pointer;
+                        color: white;
+                    }
+                }
+
+            }
+
+        }
+
+        .skillset {
+            // display: flex;
+            color: black;
+            flex-direction: column;
+            height: 435px;
+
+
+            .header1 {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                padding-left: 89px;
+
+                h2 {
+                    font-family: sans-serif;
+                }
+            }
+
+            
+        }
+
+        .edu{
+            background-color: rgb(34, 145, 165); ;
+            height: 541px;
+            margin-top: 27px;
+            color: white;
+            h1{
+                padding-top: 27px;
+                    padding-left: 230px;
+                    font-size: 47px;
+                }
+            .boxes{
+                display: flex;
+                flex-direction: row;
+            }  
+        }
+    }
+}

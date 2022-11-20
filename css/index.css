@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Source+Code+Pro:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+body .main {
+  background-color: #2291a5;
+  color: white;
+  height: 598px;
+  background-size: auto; }
+  body .main .header {
+    background-color: black;
+    height: 75px;
+    width: 97%;
+    padding: 20px;
+    font-size: 22px;
+    font-family: 'Cabin Sketch', cursive;
+    padding-bottom: 0px;
+    position: sticky;
+    top: 0px;
+    opacity: 1;
+    margin: 0px; }
+  body .main .content {
+    display: flex;
+    flex-direction: row;
+    padding-top: 188px;
+    position: relative;
+    font-family: 'Source Code Pro', monospace;
+    width: 100%; }
+    body .main .content .myintro {
+      padding-left: 84px;
+      width: 46vw; }
+      body .main .content .myintro .hello {
+        font-size: 31px;
+        padding-bottom: 5px; }
+      body .main .content .myintro .name {
+        font-size: 36px;
+        padding-bottom: 5px;
+        font-family: sans-serif; }
+      body .main .content .myintro .about {
+        font-size: 25px;
+        padding-bottom: 5px; }
+      body .main .content .myintro .moreabout {
+        font-size: 19px;
+        padding-bottom: 5px;
+        font-family: sans-serif; }
+      body .main .content .myintro .buttons {
+        text-decoration: none !important; }
+        body .main .content .myintro .buttons button {
+          padding: 12px;
+          border-radius: 10px;
+          background-color: #10232a;
+          font-weight: bold;
+          font-size: 17px;
+          margin: 38px 5px;
+          cursor: pointer;
+          color: white; }
+  body .main .skillset {
+    color: black;
+    flex-direction: column;
+    height: 435px; }
+    body .main .skillset .header1 {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      padding-left: 89px; }
+      body .main .skillset .header1 h2 {
+        font-family: sans-serif; }
+  body .main .edu {
+    background-color: #2291a5;
+    height: 541px;
+    margin-top: 27px;
+    color: white; }
+    body .main .edu h1 {
+      padding-top: 27px;
+      padding-left: 230px;
+      font-size: 47px; }
+    body .main .edu .boxes {
+      display: flex;
+      flex-direction: row; }
